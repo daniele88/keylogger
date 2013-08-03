@@ -80,7 +80,8 @@ int main (int argc, char **argv)  {
  
         while(1)  {
                 code=0;
- 
+ 		
+		//read a byte from the keyboard port
                 if (inb(KB_STATUS)==20)
                         code=inb(KB_IO);
  
