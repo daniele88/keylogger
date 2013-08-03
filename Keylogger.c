@@ -5,7 +5,7 @@
  
 #define KB_IO   0x60
 #define KB_STATUS       0x64
-#define SLEEP_T 50
+#define SLEEP_T 50 // how often (ms) the program reads from the keyboard port
  
 const char get_key(int code)  {
         if ((code>=2) && (code<=10))
